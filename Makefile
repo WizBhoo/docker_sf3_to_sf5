@@ -41,6 +41,10 @@ config: ## Validate and view the Compose file
 sh: ## Connect into container - Specify container (php-fpm [default]/nginx) - Specify shell (zsh [default]/bash/sh)
 	docker exec -it -u 1000 $(container) $(shell)
 
+# Connect into blackfire container
+shbf: ## Connect into blackfire container
+	docker exec -it -u 1000 blackfire sh
+
 # Init symfony 3.4.x or 4.x.x project
 project-init: ## Init symfony 3.4.x or 4.x.x project
 	docker exec -it -u 1000 php-fpm composer create-project symfony/website-skeleton:3.4.* symfony

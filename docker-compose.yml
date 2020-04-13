@@ -9,7 +9,7 @@ services:
         volumes:
             - '/var/run/docker.sock:/tmp/docker.sock:ro'
         networks:
-            - sf3-network
+            - sf-network
 
     nginx:
         build: .docker/nginx
@@ -22,7 +22,7 @@ services:
         links:
             - php-fpm:php
         networks:
-            - sf3-network
+            - sf-network
 
     php-fpm:
         build: .docker/php-fpm
@@ -34,7 +34,7 @@ services:
         external_links:
             - mysql-server:mysql-server.localhost
         networks:
-            - sf3-network
+            - sf-network
 
     blackfire:
         image: blackfire/blackfire
@@ -50,7 +50,7 @@ services:
         links:
             - nginx-proxy:mon-site.localhost
         networks:
-            - sf3-network
+            - sf-network
 
     mysql-server:
         image: mysql
@@ -60,7 +60,7 @@ services:
         links:
             - php-fpm:php-fpm
         networks:
-            - sf3-network
+            - sf-network
         environment:
             MYSQL_ROOT_PASSWORD: 'root'
             MYSQL_ROOT_HOST: '%'
@@ -77,10 +77,10 @@ services:
         links:
             - mysql-server:mysql-server.localhost
         networks:
-            - sf3-network
+            - sf-network
 
 volumes:
     mysql-data:
 
 networks:
-    sf3-network:
+    sf-network:

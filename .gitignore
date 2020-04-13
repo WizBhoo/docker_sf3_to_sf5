@@ -1,2 +1,3 @@
 /symfony/
 /.env
+.DS_Store

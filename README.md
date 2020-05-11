@@ -1,6 +1,6 @@
 # Docker Template - PHP-Symfony 3.4.* or 4.* or 5.* project
 
-### Version 1.0.3 - April 2020
+### Version 1.0.4 - May 2020
 
 *   This stack provide a development environment ready to run a PHP-Symfony 3.4.* or 4.* or 5.* project.
 *   Prerequisite : to have Docker and Docker-Compose installed on your machine - [Docker Install](https://docs.docker.com/install/).
@@ -8,7 +8,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-Realized thanks to Yann LUCAS [yann.lucas@outlook.com](mailto:yann.lucas@outlook.com) support,
+Realized thanks to Yann LUCAS [(see GitHub)](https://github.com/drixs6o9) support,
 
 Maintained and adapted by Adrien PIERRARD [adrien.pierrard@gmail.com](mailto:adrien.pierrard@gmail.com).
 

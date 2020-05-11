@@ -47,7 +47,7 @@ shbf: ## Connect into blackfire container
 
 # Init symfony 3.4.x or 4.x.x project
 project-init: ## Init symfony 3.4.x or 4.x.x project
-	docker exec -it -u 1000 php-fpm composer create-project symfony/website-skeleton:3.4.* symfony
+	docker exec -it -u 1000 php-fpm composer create-project symfony/website-skeleton:4.4.* symfony
 
 # Execute blackfire curl
 blackfire_curl: ## Execute blackfire curl
